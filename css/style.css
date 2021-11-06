@@ -219,6 +219,7 @@ img {
 /* Примеры работ */
 .works {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .card-set {
@@ -255,7 +256,7 @@ img {
   border: #f5f4fa;
 }
 .card-names > .names {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .card-names > .names:first-child {
   margin-left: 0;
@@ -321,7 +322,8 @@ img {
 .first {
   display: flex;
   justify-content: center;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 50px 0;
 }
 
 .filtr {
@@ -367,7 +369,8 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 34px;
+  margin-bottom: 0;
+  padding-left: 0;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -378,13 +381,13 @@ img {
 }
 .card-cont {
   padding: 20px 24px;
+  margin: 0;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
 }
 .card-cont > .title {
   margin: 0 0 4px 0;
-  padding: 0;
-}
-.card-cont > .description {
-  margin: 0;
 }
 .links {
   text-decoration: none;
