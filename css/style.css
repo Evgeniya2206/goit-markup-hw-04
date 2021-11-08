@@ -73,6 +73,7 @@ img {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   padding-top: 32px;
@@ -80,27 +81,22 @@ img {
   text-decoration: none;
 }
 
-.user:hover {
-  color: var(--accent);
-  fill: var(--accent);
-}
 .link-header {
   margin: 0 0 0 50px;
 }
 .link-header:first-child {
   margin-left: 0;
 }
+
 .link-icon {
   width: 16px;
   height: 12px;
-  fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.link-icon:hover,
-.link-icon:focus {
+.user:hover {
   fill: var(--accent);
+  color: var(--accent);
 }
-
 /* Навигация */
 .site-nav {
   display: flex;
@@ -441,6 +437,7 @@ img {
 .footer-list {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 .footer-list:not(:last-child) {
   margin-right: 10px;
