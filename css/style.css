@@ -82,12 +82,23 @@ img {
 
 .user:hover {
   color: var(--accent);
+  fill: var(--accent);
 }
 .link-header {
   margin: 0 0 0 50px;
 }
 .link-header:first-child {
   margin-left: 0;
+}
+.link-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--accent);
 }
 
 /* Навигация */
@@ -122,10 +133,22 @@ img {
 /* Герой */
 
 .hero {
-  background-color: var(--secondary-bg-color);
+  text-align: center;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
 }
 
 .hero-title {
@@ -169,6 +192,20 @@ img {
 }
 
 /* Преимущества */
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+.icon-list {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -243,14 +280,13 @@ img {
   padding-bottom: 94px;
 }
 .card-contant {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 10px;
   text-align: center;
   background: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .card-names {
   display: flex;
-
   padding: 0;
   margin: 0;
   border: #f5f4fa;
@@ -276,6 +312,66 @@ img {
   line-height: 1.17;
   margin: 0;
 }
+.team-soc {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 16px 0 0 0;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
+}
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+.team-child {
+  background-color: white;
+}
+.soc-link:hover,
+.soc-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent);
+}
+/* Наши клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.card-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 0 -30px;
+}
+.card {
+  margin: 0 0 0 30px;
+}
+.logo-icon {
+  width: 106px;
+  height: 60px;
+}
+.link-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+}
+.link-logo:hover,
+.link-logo:focus {
+  fill: var(--accent);
+  border: 1px solid var(--accent);
+}
 
 /* футер */
 .footer {
@@ -283,6 +379,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-logo {
   display: flex;
   align-items: center;
@@ -310,9 +411,55 @@ img {
   display: block;
   margin-bottom: 9px;
 }
-.footer-link:last-child {
-  margin-bottom: 0;
+.footer-icon {
+  display: block;
+  margin-left: 70px;
 }
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.title-footer {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+.footer-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer-list {
+  display: flex;
+  margin: 0;
+}
+.footer-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-links {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--second-white-color);
+  border-radius: 50%;
+}
+.footer-links:hover {
+  background-color: var(--accent);
+}
+
 /* Портфолио */
 .portfolio {
   background-color: #ffffff;
@@ -373,6 +520,13 @@ img {
   padding-left: 0;
   margin-left: -30px;
   margin-top: -30px;
+}
+.filtrs:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .second > .filtrs {
   flex-basis: calc(100% / 3-30px);
