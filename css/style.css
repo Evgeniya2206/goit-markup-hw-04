@@ -67,13 +67,14 @@ img {
   padding-left: 0px;
   list-style: none;
   margin: 0 0 0 auto;
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
 .user {
   display: flex;
   align-items: center;
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   padding-top: 32px;
@@ -93,7 +94,7 @@ img {
   height: 12px;
   margin-right: 10px;
 }
-.user:hover {
+.lists:hover {
   fill: var(--accent);
   color: var(--accent);
 }
