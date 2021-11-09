@@ -74,12 +74,13 @@ img {
 .user {
   display: flex;
   align-items: center;
-
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  fill: currentColor;
 }
 
 .link-header {
@@ -94,8 +95,8 @@ img {
   height: 12px;
   margin-right: 10px;
 }
-.lists:hover {
-  fill: var(--accent);
+.user:hover,
+.user:focus {
   color: var(--accent);
 }
 /* Навигация */
