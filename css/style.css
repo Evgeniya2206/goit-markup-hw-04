@@ -313,9 +313,15 @@ img {
 .team-soc {
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
   margin: 16px 0 0 0;
+  padding: 0;
 }
+.team-link {
+  margin-left: 10px;
+}
+
 .team-icon {
   width: 20px;
   height: 20px;
@@ -331,7 +337,12 @@ img {
 }
 .team-child {
   background-color: white;
+  margin-left: 10px;
 }
+.team-child:first-child {
+  margin-left: 0;
+}
+
 .soc-link:hover,
 .soc-link:focus {
   fill: #ffffff;
@@ -488,6 +499,7 @@ img {
 .filtr:focus {
   background-color: var(--accent);
   color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .card-cont > .title {
   color: var(--title-text-color);
@@ -520,15 +532,15 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
-.filtrs:hover {
+.links {
+  text-decoration: none;
+}
+.links:hover,
+.links:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
+
 .second > .filtrs {
-  flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -541,7 +553,4 @@ img {
 }
 .card-cont > .title {
   margin: 0 0 4px 0;
-}
-.links {
-  text-decoration: none;
 }
