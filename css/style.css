@@ -534,6 +534,13 @@ img {
 }
 .links {
   text-decoration: none;
+  display: block;
+}
+.filtrs:hover,
+.filtrs:focus {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
 .links:hover,
 .links:focus {
